@@ -1,2 +1,30 @@
-<script>
-</script>
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>Forside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Side 2</h1>
+
+  <script>
+    let tal = prompt("Indtast et helt tal:");
+
+    let sum = 0;
+
+    for (let i = 0; i < tal.length; i++) {
+      let ciffer = tal[i];                  
+      let cifferSomTal = parseInt(ciffer);  
+      sum = sum + cifferSomTal;             
+    }
+
+    console.log(`Summen af cifrene er: ${sum}`);
+
+    // vis på siden i stedet for i konsollen
+
+  alert(`Summen af cifrene i ${tal} er: ${sum}`);
+
+  </script>
+</body>
+</html>
