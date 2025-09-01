@@ -11,18 +11,26 @@
   <h1>Side 1</h1>
 
   <script>
-    // Få tal fra brugeren
     let a = parseInt(prompt("Indtast første tal:"));
     let b = parseInt(prompt("Indtast andet tal:"));
 
     let sum = 0;
+    let udregning = [];
 
     for (let i = 1; i <= 1000; i++) {
       if (i % a === 0 || i % b === 0) {
         sum += i;
+        udregning.push(i);
       }
     }
 
-    alert("Summen er: " + sum);
+    // vis udregningen i konsollen
+    console.log("Udregning:", udregning.join(" + "));
 
+    // Vis kun summen i en alert
+    alert("Summen er: " + sum);
   </script>
+
+</body>
+
+</html>
