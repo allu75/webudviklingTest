@@ -1,4 +1,28 @@
-// test
-<script>
+<!DOCTYPE html>
+<html lang="da">
 
-</script>
+<head>
+  <meta charset="UTF-8">
+  <title>Forside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Side 1</h1>
+
+  <script>
+    // Få tal fra brugeren
+    let a = parseInt(prompt("Indtast første tal:"));
+    let b = parseInt(prompt("Indtast andet tal:"));
+
+    let sum = 0;
+
+    for (let i = 1; i <= 1000; i++) {
+      if (i % a === 0 || i % b === 0) {
+        sum += i;
+      }
+    }
+
+    alert("Summen er: " + sum);
+
+  </script>
